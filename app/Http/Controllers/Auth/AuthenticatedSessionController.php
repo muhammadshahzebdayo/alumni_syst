@@ -53,7 +53,7 @@ class AuthenticatedSessionController extends Controller
     $roleId = $user->role_id;
 //  debug  data
 
-// dd(Auth::user()); 
+// dd(Auth::user());
 
 // dd(session()->all());
 
@@ -74,6 +74,6 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect('/index');
+        return redirect('/');
     }
 }
